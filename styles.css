@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Serif", serif;
+    
+}
+:root{
+    --black: #121212;
+    --white: rgb(255 255 255 / 0.9);
+    --bg-color:  rgb(17, 24, 39);
+    --bg-items: rgb(31 41 55 / 0.6);
+}
+body{
+    background: var(--bg-color);    
+}
+.navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    
+}
+.navbar a, .main-header h2 > a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 400;
+}
+.navbar a:hover{
+    background-color: var(--bg-items);
+    padding: 6px 8px;
+    border-radius: 4px;
+    
+    
+}
+    
+.main-header{
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    border-bottom: #121212 solid 1px;
+    position: sticky;
+    top: 0;
+    height: 100%;
+    flex-wrap: wrap;
+    min-height: 60px;
+    
+    
+}
+#hero{
+    background-image: linear-gradient(
+      305deg,
+      hsl(240deg 100% 20%) 0%,
+      hsl(238deg 93% 20%) 12%,
+      hsl(237deg 86% 19%) 22%,
+      hsl(235deg 80% 19%) 29%,
+      hsl(234deg 75% 18%) 35%,
+      hsl(232deg 69% 18%) 40%,
+      hsl(230deg 64% 17%) 46%,
+      hsl(229deg 59% 16%) 51%,
+      hsl(227deg 55% 15%) 58%,
+      hsl(226deg 51% 14%) 66%,
+      hsl(224deg 47% 13%) 75%,
+      hsl(223deg 43% 12%) 86%,
+      hsl(221deg 39% 11%) 100%
+    );
+    width: 100%;
+    min-height: 80vh;
+    color: aliceblue;
+    padding: 25px;
+    font-size: 18px;
+    height: 100%;
+    
+    
+  }
+  .hero-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 600px));
+    justify-content: space-evenly;
+    padding: 10px;
+    gap: 25px;
+    
+  }
+
+ a.social{
+    text-decoration: none;
+    color: aliceblue;
+ }
+ .hero-content{
+    padding: 0 30px;
+ }
+
+ .hero-skillbtns {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin: 15px 0;
+    
+ }
+ .hero-skillbtns > div{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+ }
+ .div-front{
+    background-color: rgb(102 51 153 / 0.5);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 18px;
+    
+}
+.div-ui-ux{
+    background-color: rgb(131 24 67 / 0.5);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 18px;
+}
+.div-cs{
+    background-color: rgb(49 46 129 / 0.5);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 18px;
+}
+.socials{
+   display: flex;
+
+   flex-wrap: wrap;
+    gap: 10px;
+    
+}
+.social-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; 
+    background-color: var(--bg-items); 
+    font-size: 24px; 
+    transition: background-color 0.3s, color 0.3s;
+    
+}
+.social-div:hover {
+    background-color: rgba(255, 255, 255, 0.2);  
+  }
+  .contact-container{
+    background: var(--bg-items);
+    border-radius: 24px;
+    padding: 25px 50px;
+    text-align: center;
+    box-shadow:
+    0px 0 25px rgb(255 0 255 / 0.9),        
+    0px 0 25px rgb(0  255  255 / 0.9);         
+    
+    
+    
+  }
+  .title-form{
+    font-size: 1.25rem;
+  }
+  
+.contact-form{
+    display: flex;
+    width: 100%;
+    text-align: left;
+    justify-content: center;
+ }
