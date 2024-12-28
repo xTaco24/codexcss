@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: "Noto Serif", serif;
     
+    
 }
 :root{
     --black: #121212;
@@ -79,13 +80,19 @@ body{
     
   }
   .hero-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  /* .hero-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 600px));
     justify-content: space-evenly;
     padding: 10px;
     gap: 25px;
     
-  }
+  } */
 
  a.social{
     text-decoration: none;
@@ -157,6 +164,7 @@ body{
     background-color: rgba(255, 255, 255, 0.2);  
   }
   .contact-container{
+    min-width: 420px;
     background: var(--bg-items);
     border-radius: 24px;
     padding: 25px 50px;
@@ -178,3 +186,13 @@ body{
     text-align: left;
     justify-content: center;
  }
+
+ .about, .projects{
+    text-align: center;
+    padding: 20px;
+    color: aliceblue;
+ }
+.p-img1{
+  max-width: 100%;
+  border-radius: 18px;
+}
